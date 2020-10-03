@@ -30,6 +30,9 @@ spec:
         app: train-schedule
     spec:
       containers:
+        resources:
+          requests:
+            cpu: 200m
       - name: train-schedule
         image: linuxacademycontent/train-schedule:autoscaling
         ports:
